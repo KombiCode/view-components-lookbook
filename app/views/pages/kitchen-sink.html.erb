@@ -1,0 +1,22 @@
+<article class="m-24 prose">
+  <h1 class="mb-6 text-4xl text-gray-900">ViewComponents kitchen sink
+  <p class="text-xl text-gray-800">This page will demo our ViewComponents
+
+
+  <h2 class="mb-4 text-3xl text-gray-700">ButtonComponent
+  <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Primary
+    <%= render(ButtonComponent.new(type: :primary)) do %>
+        Submit
+    <% end %>
+
+  <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Outline
+    <%= render(ButtonComponent.new(type: :outline)) do %>
+        Cancel 
+    <% end %>
+
+  <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Danger
+    <%= render(ButtonComponent.new(type: :danger)) do %>
+        Delete
+    <% end %>
+    
+</article>
