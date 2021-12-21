@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ButtonComponent < ViewComponent::Base
-  attr_accessor :type
+  attr_accessor :theme
 
   PRIMARY_CLASSES = %w[
     disabled:bg-purple-300
@@ -43,12 +43,14 @@ class ButtonComponent < ViewComponent::Base
     outline: OUTLINE_CLASSES
   }.freeze
 
-  def initialize(type: :primary)
-    @type = type
+  def initialize(theme: :primary, arrow: false)
+    @theme = theme
+    @arrow = arrow
   end
 
-  def classes
-    (BUTTON_TYPE_MAPPINGS[@type] + BASE_CLASSES).join(' ')
+  def theme_classes
+    (BUTTON_TYPE_MAPPINGS[@theme] + BASE_CLASSES).join(' ')
   end
 
 end
+

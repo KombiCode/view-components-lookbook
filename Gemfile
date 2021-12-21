@@ -76,3 +76,4 @@ end
 
 # View Component
 gem "view_component"
+gem "lookbook", "~> 0.5.0.beta.2"
