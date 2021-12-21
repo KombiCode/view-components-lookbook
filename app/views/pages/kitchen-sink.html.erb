@@ -5,17 +5,17 @@
 
   <h2 class="mb-4 text-3xl text-gray-700">ButtonComponent
   <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Primary
-    <%= render(ButtonComponent.new(type: :primary)) do %>
+    <%= render(ButtonComponent.new(theme: :primary)) do %>
         Submit
     <% end %>
 
   <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Outline
-    <%= render(ButtonComponent.new(type: :outline)) do %>
+    <%= render(ButtonComponent.new(theme: :outline)) do %>
         Cancel 
     <% end %>
 
   <h3 class="flex flex-col items-start content-start mt-6 mb-4 text-2xl text-gray-700">Danger
-    <%= render(ButtonComponent.new(type: :danger)) do %>
+    <%= render(ButtonComponent.new(theme: :danger)) do %>
         Delete
     <% end %>
     
